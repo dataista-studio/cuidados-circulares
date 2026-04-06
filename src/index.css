@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -14,8 +15,9 @@
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --serif: 'EB Garamond Variable', serif;
+  --heading: 'Imbue Variable', 'Segoe UI', Roboto, sans-serif;
+  --mono: 'DM Mono', Consolas, monospace;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -30,6 +32,12 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+}
+/* Tailwind */
+@theme {
+  --font-serif: 'EB Garamond Variable', serif;
+  --font-heading: 'Imbue Variable', 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'DM Mono', Consolas, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
