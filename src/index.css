@@ -38,6 +38,21 @@
   --font-serif: 'EB Garamond Variable', serif;
   --font-heading: 'Imbue Variable', 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'DM Mono', Consolas, monospace;
+
+  --color-verde-oscuro: #72744A;
+  --color-verde-medio: #7C6A0A;
+  --color-verde: #959848;
+  --color-verde-claro: #BBBD8D;
+  --color-salmon: #FFDEC6;
+  --color-naranjo-claro: #FA9500;
+  --color-naranjo-: #EB6424;
+  --color-naranjo-oscuro: #CC4201;
+
+  /*  Neutros */
+  --color-crema: #F7EEE1;
+  --color-burdeo: #5D202E;
+  --color-blanco: #FFFFFF;
+  --color-gris: #E8E5E1;
 }
 
 @media (prefers-color-scheme: dark) {
