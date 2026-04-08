@@ -1,4 +1,4 @@
-import Globe from "./Globe.jsx";
+import Globe from "../components/Globe.jsx";
 import { oceano5, tierra5, pais5 } from '../utils/colors.js';
 
 export default function SeccionV() {
