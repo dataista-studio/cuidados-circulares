@@ -1,6 +1,6 @@
 export default function ButtonArrow({ direction='left' }) {
     return (
-        <div className="rounded-3xl border border-black fit-content py-2 px-4">
+        <div className="rounded-3xl border border-black fit-content py-4 px-4 w-[84px]">
             {
             direction === 'left'  ?
                 <svg width="44" height="15" viewBox="0 0 44 15" fill="none" xmlns="http://www.w3.org/2000/svg">
