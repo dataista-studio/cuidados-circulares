@@ -1,11 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 import Portada from './screens/Portada.jsx';
 import SeccionI from './screens/SeccionI.jsx'
-import SeccionII from './screens/SeccionIII.jsx'
+import SeccionII from './screens/SeccionII.jsx'
 import SeccionIII from './screens/SeccionIII.jsx'
 import SeccionIV from './screens/SeccionIV.jsx'
 import SeccionV from './screens/SeccionV.jsx'
@@ -47,4 +44,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

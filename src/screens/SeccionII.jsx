@@ -1,9 +1,7 @@
-
-export default function SeccionI() {
+export default function SeccionII() {
     return (
-
         <div className="w-screen h-screen bg-red-500">
-            Sección1
+            Sección2
         </div>
     )
 };
