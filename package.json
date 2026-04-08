@@ -10,8 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource-variable/eb-garamond": "^5.2.7",
+    "@fontsource-variable/imbue": "^5.2.8",
+    "@fontsource/dm-mono": "^5.2.7",
+    "@tailwindcss/vite": "^4.2.2",
+    "d3-geo": "^3.1.1",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.2",
+    "topojson-client": "^3.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
@@ -25,6 +32,6 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
-    "vite": "^8.0.4"
+    "vite": "^8.0.5"
   }
 }
