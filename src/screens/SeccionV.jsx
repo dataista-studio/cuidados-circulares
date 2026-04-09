@@ -12,7 +12,7 @@ import LegendItem from "./seccionV/LegendItem";
 import ChartVariable from "./seccionV/ChartVariable";
 import Chart from "./seccionV/Chart";
 import ButtonArrow from "../ui/ButtonArrow";
-import { getChartSource, getChartTitle, getChartVariable, getEnglishName, getParagraphText } from "./seccionV/utils";
+import { getChartSource, getChartTitle, getChartVariable, getEnglishName, getParagraphText } from "./seccionV/content";
 
 export default function SeccionV() {
     const possibleCountries = ["México", "República Dominicana", "Chile"];
