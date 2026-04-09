@@ -8,6 +8,7 @@ import ChartTitle from "./seccionV/ChartTitle";
 import ChartSource from "./seccionV/ChartSource";
 import LegendItem from "./seccionV/LegendItem";
 import ChartVariable from "./seccionV/ChartVariable";
+import Chart from "./seccionV/Chart";
 
 const title = "La brecha de cuidados es crónica";
 const paragraphText = "La brecha de género del perfil feminizado de los cuidadores se repite en todos los segmentos etáreos. Las mujeres cuidan más en todos los ciclos de nuestra vida.";
@@ -38,11 +39,12 @@ export default function SeccionV() {
                         <div className="w-[247px] ml-[49px]">
                             <ChartTitle chartTitle={chartTitle} />
                             <ChartSource chartSource={chartSource} />
-                            {selectedCountry === 'México' ? <LegendItem fill={"none"} stroke={"#000"} text={"100 personas"} /> : null}
+                            {selectedCountry === 'México' && <LegendItem fill={"none"} stroke={"#000"} text={"100 personas"} />}
                             <LegendItem fill={verde} stroke={verde} text={"Mujeres"} />
                             <LegendItem fill={naranjo} stroke={naranjo} text={"Hombres"} />
                         </div>
                         <ChartVariable chartVariable={chartVariable} />
+                        <Chart country={selectedCountry} />
                     </div>
                 </div>
             </div>
