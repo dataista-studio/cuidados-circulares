@@ -47,7 +47,7 @@ export default function SeccionV() {
     return (
         <div className="w-screen h-screen bg-crema overflow-hidden">
             <div className="max-w-[1080px] flex flex-row mx-auto h-screen pt-[43px] gap-10 relative">
-                <div className="w-[48%] h-full">
+                <div className="w-[50%] h-full">
                     <Title title={title} />
                     <Paragraph paragraph={paragraphText} />
                     <CountryTitle countryName={selectedCountry} />
@@ -59,7 +59,7 @@ export default function SeccionV() {
                         countryColor={pais5}
                     />
                 </div>
-                <div className="w-[48%] h-screen">
+                <div className="w-[50%] h-screen">
                     <div className="h-[90%] w-[140%] bg-blanco pt-[49px] relative">
                         <div className="w-[247px] ml-[49px]">
                             <ChartTitle chartTitle={chartTitle} />
