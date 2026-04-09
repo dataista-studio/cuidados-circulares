@@ -1,14 +1,14 @@
 export default function MexicoChart() {
     return (
         <svg width="321" height="583" viewBox="0 0 321 583" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M177.383 549.241L156.265 2.64904" stroke="#5D202E" stroke-width="2"/>
-            <path d="M167.381 497.589L184.368 496.933" stroke="#5D202E" stroke-width="2"/>
-            <path d="M163.559 398.663L180.546 398.007" stroke="#5D202E" stroke-width="2"/>
-            <path d="M159.736 299.737L176.724 299.081" stroke="#5D202E" stroke-width="2"/>
-            <path d="M155.914 200.811L172.901 200.154" stroke="#5D202E" stroke-width="2"/>
-            <path d="M152.092 101.884L169.079 101.228" stroke="#5D202E" stroke-width="2"/>
-            <path d="M156.709 0.038484C156.9 5.00534 150.793 9.27376 143.066 9.57227" stroke="#5D202E" stroke-width="2"/>
-            <path d="M171.083 9.49088C163.357 9.78939 156.938 6.00494 156.746 1.03809" stroke="#5D202E" stroke-width="2"/>
+            <path d="M177.383 549.241L156.265 2.64904" stroke="#5D202E" strokeWidth="2"/>
+            <path d="M167.381 497.589L184.368 496.933" stroke="#5D202E" strokeWidth="2"/>
+            <path d="M163.559 398.663L180.546 398.007" stroke="#5D202E" strokeWidth="2"/>
+            <path d="M159.736 299.737L176.724 299.081" stroke="#5D202E" strokeWidth="2"/>
+            <path d="M155.914 200.811L172.901 200.154" stroke="#5D202E" strokeWidth="2"/>
+            <path d="M152.092 101.884L169.079 101.228" stroke="#5D202E" strokeWidth="2"/>
+            <path d="M156.709 0.038484C156.9 5.00534 150.793 9.27376 143.066 9.57227" stroke="#5D202E" strokeWidth="2"/>
+            <path d="M171.083 9.49088C163.357 9.78939 156.938 6.00494 156.746 1.03809" stroke="#5D202E" strokeWidth="2"/>
             <circle cx="149.276" cy="262.112" r="3" transform="rotate(-2.21254 149.276 262.112)" fill="#959848"/>
             <circle cx="106.844" cy="251.743" r="3" transform="rotate(-2.21254 106.844 251.743)" fill="#959848"/>
             <circle cx="228.592" cy="255.092" r="3" transform="rotate(-2.21254 228.592 255.092)" fill="#EB6424"/>

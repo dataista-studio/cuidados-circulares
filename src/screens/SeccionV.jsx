@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { oceano5, tierra5, pais5, verde, naranjo } from "../utils/colors";
 
 import Title from "./seccionV/Title";
@@ -10,16 +12,38 @@ import LegendItem from "./seccionV/LegendItem";
 import ChartVariable from "./seccionV/ChartVariable";
 import Chart from "./seccionV/Chart";
 import ButtonArrow from "../ui/ButtonArrow";
-
-const title = "La brecha de cuidados es crónica";
-const paragraphText = "La brecha de género del perfil feminizado de los cuidadores se repite en todos los segmentos etáreos. Las mujeres cuidan más en todos los ciclos de nuestra vida.";
-const selectedCountry = 'México';
-const englishName = "Mexico";
-const chartTitle = "Cantidad de personas cuidadoras principales por rango etáreo, según sexo.";
-const chartSource = "Fuente: Enasic 2022";
-const chartVariable = "Cuidadores principales"
+import { getChartSource, getChartTitle, getChartVariable, getEnglishName, getParagraphText } from "./seccionV/utils";
 
 export default function SeccionV() {
+    const possibleCountries = ["México", "República Dominicana", "Chile"];
+
+    const [index, setIndex] = useState(0);
+    const selectedCountry = possibleCountries[index];
+
+    const title = "La brecha de cuidados es crónica";
+    const paragraphText = getParagraphText(selectedCountry);
+
+    const englishName = getEnglishName(selectedCountry);
+    const chartTitle = getChartTitle(selectedCountry);
+    const chartSource = getChartSource(selectedCountry);
+    const chartVariable = getChartVariable(selectedCountry);
+
+    const increaseIndex = () => {
+        if (index === possibleCountries.length - 1) {
+            setIndex(0)
+        } else {
+            setIndex(index + 1)
+        }
+    }
+
+    const decreaseIndex = () => {
+        if (index === 0) {
+            setIndex(possibleCountries.length - 1)
+        } else {
+            setIndex(index - 1)
+        }
+    }
+
     return (
         <div className="w-screen h-screen bg-crema overflow-hidden">
             <div className="max-w-[1080px] flex flex-row mx-auto h-screen pt-[43px] gap-10 relative">
@@ -49,8 +73,8 @@ export default function SeccionV() {
                     </div>
                 </div>
                 <div className="absolute bottom-[60px] left-[50%] -translate-x-1/2 flex flex-row gap-4">
-                    <ButtonArrow direction="left" />
-                    <ButtonArrow direction="right" />
+                    <ButtonArrow direction="left" onclick={decreaseIndex}/>
+                    <ButtonArrow direction="right" onclick={increaseIndex}/>
                 </div>
             </div>
         </div>

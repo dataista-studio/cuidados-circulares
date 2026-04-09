@@ -4,7 +4,7 @@ export default function LegendItem({ fill, stroke, text }) {
     return (
         <div>
             <svg className="inline mr-[12px]" width={width} height={width}>
-                <circle r={size/2} cx={width/2} cy={width/2} stroke={stroke} fill={fill} stroke-width={1}/>
+                <circle r={size/2} cx={width/2} cy={width/2} stroke={stroke} fill={fill} strokeWidth={1}/>
             </svg>
             <span className="text-[20px] text-burdeo font-serif leading-[20px] font-normal">
                 {text}

@@ -1,6 +1,14 @@
-export default function ButtonArrow({ direction='left' }) {
+export default function ButtonArrow({ direction='left', onclick }) {
+    const clicked = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        onclick();
+    }
     return (
-        <div className="rounded-3xl border-[2px] border-verde-oscuro fit-content py-2.5 px-4 w-[84px] inline-block cursor-pointer">
+        <div
+            className="rounded-3xl border-[2px] border-verde-oscuro fit-content py-2.5 px-4 w-[84px] inline-block cursor-pointer"
+            onClick={clicked}
+        >
             {
                 direction === 'left'  ?
                     <svg width="44" height="15" viewBox="0 0 44 15" fill="none" xmlns="http://www.w3.org/2000/svg">
