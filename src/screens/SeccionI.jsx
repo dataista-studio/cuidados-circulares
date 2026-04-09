@@ -6,6 +6,9 @@ export default function SeccionI() {
 
             <img src="./src/assets/img/big_hand_l.png" alt="" className="h-[237.3px] w-[619.71px] absolute left-0" />
             <img src="./src/assets/img/big_hand_r.png" alt="" className="h-[237.3px] w-[619.71px] absolute right-0" />
+            
+            <img src="./src/assets/img/medium_hand_l.png" alt="" className="w-[221.41px] h-[490.74px] absolute bottom-0 right-1/2" />
+            <img src="./src/assets/img/medium_hand_r.png" alt="" className="w-[221.41px] h-[490.74px] absolute bottom-0 left-1/2" />
 
         </div>
     )
