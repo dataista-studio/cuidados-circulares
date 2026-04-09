@@ -7,6 +7,7 @@ import Globe from "../components/Globe";
 import ChartTitle from "./seccionV/ChartTitle";
 import ChartSource from "./seccionV/ChartSource";
 import LegendItem from "./seccionV/LegendItem";
+import ChartVariable from "./seccionV/ChartVariable";
 
 const title = "La brecha de cuidados es crónica";
 const paragraphText = "La brecha de género del perfil feminizado de los cuidadores se repite en todos los segmentos etáreos. Las mujeres cuidan más en todos los ciclos de nuestra vida.";
@@ -14,6 +15,7 @@ const selectedCountry = 'México';
 const englishName = "Mexico";
 const chartTitle = "Cantidad de personas cuidadoras principales por rango etáreo, según sexo.";
 const chartSource = "Fuente: Enasic 2022";
+const chartVariable = "Cuidadores principales"
 
 export default function SeccionV() {
     return (
@@ -32,7 +34,7 @@ export default function SeccionV() {
                     />
                 </div>
                 <div className="w-[48%] h-screen">
-                    <div className="h-[95%] w-[140%] bg-blanco pt-[49px]">
+                    <div className="h-[90%] w-[140%] bg-blanco pt-[49px] relative">
                         <div className="w-[247px] ml-[49px]">
                             <ChartTitle chartTitle={chartTitle} />
                             <ChartSource chartSource={chartSource} />
@@ -40,6 +42,7 @@ export default function SeccionV() {
                             <LegendItem fill={verde} stroke={verde} text={"Mujeres"} />
                             <LegendItem fill={naranjo} stroke={naranjo} text={"Hombres"} />
                         </div>
+                        <ChartVariable chartVariable={chartVariable} />
                     </div>
                 </div>
             </div>
