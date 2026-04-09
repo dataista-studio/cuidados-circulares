@@ -9,6 +9,7 @@ import ChartSource from "./seccionV/ChartSource";
 import LegendItem from "./seccionV/LegendItem";
 import ChartVariable from "./seccionV/ChartVariable";
 import Chart from "./seccionV/Chart";
+import ButtonArrow from "../ui/ButtonArrow";
 
 const title = "La brecha de cuidados es crónica";
 const paragraphText = "La brecha de género del perfil feminizado de los cuidadores se repite en todos los segmentos etáreos. Las mujeres cuidan más en todos los ciclos de nuestra vida.";
@@ -21,7 +22,7 @@ const chartVariable = "Cuidadores principales"
 export default function SeccionV() {
     return (
         <div className="w-screen h-screen bg-crema overflow-hidden">
-            <div className="max-w-[1080px] flex flex-row mx-auto h-screen pt-[43px] gap-10 ">
+            <div className="max-w-[1080px] flex flex-row mx-auto h-screen pt-[43px] gap-10 relative">
                 <div className="w-[48%] h-full">
                     <Title title={title} />
                     <Paragraph paragraph={paragraphText} />
@@ -46,6 +47,10 @@ export default function SeccionV() {
                         <ChartVariable chartVariable={chartVariable} />
                         <Chart country={selectedCountry} />
                     </div>
+                </div>
+                <div className="absolute bottom-[60px] left-[50%] -translate-x-1/2 flex flex-row gap-4">
+                    <ButtonArrow direction="left" />
+                    <ButtonArrow direction="right" />
                 </div>
             </div>
         </div>
