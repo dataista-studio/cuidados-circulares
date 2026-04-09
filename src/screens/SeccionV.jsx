@@ -1,8 +1,10 @@
 import Title from "./seccionV/Title";
 import Paragraph from "./seccionV/Paragraph";
+import CountryTitle from "./seccionV/CountryTitle";
 
 const title = "La brecha de cuidados es crónica";
 const paragraphText = "La brecha de género del perfil feminizado de los cuidadores se repite en todos los segmentos etáreos. Las mujeres cuidan más en todos los ciclos de nuestra vida.";
+const selectedCountry = 'México';
 
 export default function SeccionV() {
     return (
@@ -11,6 +13,7 @@ export default function SeccionV() {
                 <div className="w-[48%] h-screen">
                     <Title title={title} />
                     <Paragraph paragraph={paragraphText} />
+                    <CountryTitle countryName={selectedCountry} />
                 </div>
                 <div className="w-[48%] h-screen">
                     <Title title={"La brecha de cuidados es crónica"} />
