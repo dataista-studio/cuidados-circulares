@@ -64,9 +64,9 @@ export default function SeccionV() {
                         <div className="w-[247px] ml-[49px]">
                             <ChartTitle chartTitle={chartTitle} />
                             <ChartSource chartSource={chartSource} />
-                            {selectedCountry === 'México' && <LegendItem fill={"none"} stroke={"#000"} text={"100 personas"} />}
-                            <LegendItem fill={verde} stroke={verde} text={"Mujeres"} />
-                            <LegendItem fill={naranjo} stroke={naranjo} text={"Hombres"} />
+                            {selectedCountry === 'México' && <LegendItem fill={"none"} stroke={"#000"} text={"100.000 personas"} size={12}/>}
+                            <LegendItem fill={verde} stroke={verde} text={"Mujeres"} size={12} />
+                            <LegendItem fill={naranjo} stroke={naranjo} text={"Hombres"} size={12} />
                         </div>
                         <ChartVariable chartVariable={chartVariable} />
                         <Chart country={selectedCountry} />

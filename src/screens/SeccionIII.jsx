@@ -1,9 +1,16 @@
 import Title from "./seccionIII/Title";
 import Paragraph from "./seccionIII/Paragraph";
+import ChartText from "./seccionIII/ChartText";
+import ChartTitle from "./seccionV/ChartTitle";
+import ChartSource from "./seccionV/ChartSource";
+import ChartLegend from "./seccionIII/ChartLegend";
 
 export default function SeccionIII() {
     const title = "El tiempo no se reparte igual";
     const paragraphText = "Cuidar implica invertir tiempo en ello. Todas las personas contamos con solo 24 horas durante un día para realizar nuestras tareas. De ellas, las mujeres de Latinoamérica y El Caribe, destinan el doble o triple más de tiempo al cuidado que los hombres.";
+    const chartText = "En México las mujeres le dedican 8 horas más a la semana al cuidado que los hombres.";
+    const chartTitle = "Horas dedicadas al cuidado en una semana, según sexo y país";
+    const chartSource = "Fuentes: INEGI, 2025 (México), Panorama estadístico, 2024 (República Dominicana), Observatorio Social, 2024 (Chile)";
 
     return (
         <div className="w-screen h-screen bg-verde-oscuro flex flex-col">
@@ -36,8 +43,21 @@ export default function SeccionIII() {
                 </div>
                 
             </div>
-            <div className="text-black">
-                Rest of webpage
+            <div className="text-black flex flex-row gap-10">
+                <div className="h-[calc(100vh-350px)] w-[70%] bg-blanco pt-[49px] relative flex flex-col">
+                    <div className="w-[30%] h-full">
+                        <ChartTitle chartTitle={chartTitle} />
+                        <ChartLegend />
+                        <ChartSource chartSource={chartSource} />
+                    </div>
+                    <div className="w-[70%] bg-[#FDF7EF] h-full">
+                        ads
+                    </div>
+                </div>
+                <div className="w-[30%] self-center">
+                    <ChartText charText={chartText} />
+                </div>
+                
             </div>
         </div>
     )
