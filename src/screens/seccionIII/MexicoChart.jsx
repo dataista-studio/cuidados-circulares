@@ -1,7 +1,7 @@
 export default function MexicoChart() {
     return (
         <svg width="304" height="134" viewBox="0 0 304 134" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M55.9687 19.2151L65.9688 9.21533M65.9688 9.21533L60.9688 9.21533M65.9688 9.21533L65.9687 14.2153" stroke="#DBDBDB" strokeWidth="2" stroke-linecap="round"/>
+            <path d="M55.9687 19.2151L65.9688 9.21533M65.9688 9.21533L60.9688 9.21533M65.9688 9.21533L65.9687 14.2153" stroke="#DBDBDB" strokeWidth="2" strokeLinecap="round"/>
             <circle cx="44.8735" cy="33.952" r="22.7613" transform="rotate(-1.63361 44.8735 33.952)" fill="#D9D9D9"/>
             <path d="M44.2196 11.1856C48.1973 11.0737 52.1349 12.0065 55.6396 13.8911L44.8599 33.9379L44.2196 11.1856Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M55.6894 13.9185C59.1894 15.812 62.1317 18.5899 64.2231 21.9752L44.859 33.9379L55.6894 13.9185Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
@@ -15,7 +15,7 @@ export default function MexicoChart() {
             <path d="M22.1025 34.4003C22.0219 30.4219 22.9856 26.4918 24.8977 23.002L44.8591 33.9391L22.1025 34.4003Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M24.9718 22.8656C26.9077 19.389 29.7212 16.4806 33.1317 14.4305L44.8581 33.9386L24.9718 22.8656Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M33.1816 14.4011C36.5973 12.3597 40.4886 11.2494 44.4673 11.181L44.8586 33.9389L33.1816 14.4011Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
-            <path d="M128.801 18.6587L138.801 8.65894M138.801 8.65894L133.801 8.65894M138.801 8.65894L138.801 13.6589" stroke="#DBDBDB" strokeWidth="2" stroke-linecap="round"/>
+            <path d="M128.801 18.6587L138.801 8.65894M138.801 8.65894L133.801 8.65894M138.801 8.65894L138.801 13.6589" stroke="#DBDBDB" strokeWidth="2" strokeLinecap="round"/>
             <circle cx="117.706" cy="33.3956" r="22.7613" transform="rotate(-1.63361 117.706 33.3956)" fill="#D9D9D9"/>
             <path d="M117.052 10.6292C121.029 10.5173 124.967 11.4501 128.472 13.3347L117.692 33.3815L117.052 10.6292Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M128.521 13.3621C132.021 15.2556 134.964 18.0335 137.055 21.4188L117.691 33.3816L128.521 13.3621Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
@@ -29,7 +29,7 @@ export default function MexicoChart() {
             <path d="M94.9345 33.8439C94.8539 29.8655 95.8177 25.9354 97.7298 22.4456L117.691 33.3827L94.9345 33.8439Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M97.8039 22.3092C99.7397 18.8326 102.553 15.9242 105.964 13.8741L117.69 33.3822L97.8039 22.3092Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M106.014 13.8447C109.429 11.8033 113.321 10.693 117.299 10.6246L117.691 33.3825L106.014 13.8447Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
-            <path d="M198.969 18.2151L208.969 8.21533M208.969 8.21533L203.969 8.21533M208.969 8.21533L208.969 13.2153" stroke="#DBDBDB" strokeWidth="2" stroke-linecap="round"/>
+            <path d="M198.969 18.2151L208.969 8.21533M208.969 8.21533L203.969 8.21533M208.969 8.21533L208.969 13.2153" stroke="#DBDBDB" strokeWidth="2" strokeLinecap="round"/>
             <circle cx="187.874" cy="32.952" r="22.7613" transform="rotate(-1.63361 187.874 32.952)" fill="#D9D9D9"/>
             <path d="M187.22 10.1856C191.197 10.0737 195.135 11.0065 198.64 12.8911L187.86 32.9379L187.22 10.1856Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M198.689 12.9185C202.189 14.812 205.132 17.5899 207.223 20.9752L187.859 32.9379L198.689 12.9185Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>

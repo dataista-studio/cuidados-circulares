@@ -20,29 +20,9 @@ export default function SeccionIII() {
             <div className="max-w-[1080px] flex flex-row mx-auto h-[250px] pt-[43px] gap-10 relative">
                 <div className="w-[50%] h-[100%]">
                     <Title title={title} />
-                    
-                    {/* <CountryTitle countryName={selectedCountry} />
-                    <Globe
-                        width={350}
-                        countryName={englishName}
-                        oceanColor={oceano5}
-                        landColor={tierra5}
-                        countryColor={pais5}
-                    /> */}
                 </div>
                 <div className="w-[50%] h-[100%]">
-                    {/* <div className="h-[90%] w-[140%] bg-blanco pt-[49px] relative"> */}
                     <Paragraph paragraph={paragraphText} />
-                        {/* <div className="w-[247px] ml-[49px]">
-                            <ChartTitle chartTitle={chartTitle} />
-                            <ChartSource chartSource={chartSource} />
-                            {selectedCountry === 'México' && <LegendItem fill={"none"} stroke={"#000"} text={"100 personas"} />}
-                            <LegendItem fill={verde} stroke={verde} text={"Mujeres"} />
-                            <LegendItem fill={naranjo} stroke={naranjo} text={"Hombres"} />
-                        </div>
-                        <ChartVariable chartVariable={chartVariable} />
-                        <Chart country={selectedCountry} /> */}
-                    {/* </div> */}
                 </div>
                 
             </div>
@@ -54,9 +34,9 @@ export default function SeccionIII() {
                         <ChartSource chartSource={chartSource} />
                     </div>
                     <div className="w-[60%] bg-[#FDF7EF] h-full px-[20px]">
-                        {countries.map(country => {
+                        {countries.map((country, i) => {
                             return (
-                                <CountryRow country={country} />
+                                <CountryRow country={country} key={i}/>
                             )
                         })}
                     </div>

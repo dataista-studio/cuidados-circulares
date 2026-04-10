@@ -1,7 +1,7 @@
 export default function RDChart() {
     return (
         <svg width="230" height="136" viewBox="0 0 230 136" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M54.9277 18.2151L64.9277 8.21533M64.9277 8.21533L59.9277 8.21533M64.9277 8.21533L64.9277 13.2153" stroke="#DBDBDB" strokeWidth="2" stroke-linecap="round"/>
+            <path d="M54.9277 18.2151L64.9277 8.21533M64.9277 8.21533L59.9277 8.21533M64.9277 8.21533L64.9277 13.2153" stroke="#DBDBDB" strokeWidth="2" strokeLinecap="round"/>
             <circle cx="43.8325" cy="32.952" r="22.7613" transform="rotate(-1.63361 43.8325 32.952)" fill="#D9D9D9"/>
             <path d="M43.1786 10.1856C47.1563 10.0737 51.0938 11.0065 54.5985 12.8911L43.8189 32.9379L43.1786 10.1856Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M54.6484 12.9185C58.1483 14.812 61.0907 17.5899 63.1821 20.9752L43.818 32.9379L54.6484 12.9185Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>

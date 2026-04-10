@@ -1,7 +1,7 @@
 export default function ChileChart() {
     return (
        <svg width="232" height="137" viewBox="0 0 232 137" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M57.0469 18.2151L67.0469 8.21533M67.0469 8.21533L62.0469 8.21533M67.0469 8.21533L67.0469 13.2153" stroke="#DBDBDB" strokeWidth="2" stroke-linecap="round"/>
+            <path d="M57.0469 18.2151L67.0469 8.21533M67.0469 8.21533L62.0469 8.21533M67.0469 8.21533L67.0469 13.2153" stroke="#DBDBDB" strokeWidth="2" strokeLinecap="round"/>
             <circle cx="45.9517" cy="32.952" r="22.7613" transform="rotate(-1.63361 45.9517 32.952)" fill="#D9D9D9"/>
             <path d="M45.2977 10.1856C49.2754 10.0737 53.213 11.0065 56.7177 12.8911L45.938 32.9379L45.2977 10.1856Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M56.7676 12.9185C60.2675 14.812 63.2099 17.5899 65.3013 20.9752L45.9372 32.9379L56.7676 12.9185Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
@@ -15,7 +15,7 @@ export default function ChileChart() {
             <path d="M23.1806 33.4003C23.1 29.4219 24.0638 25.4918 25.9759 22.002L45.9372 32.9391L23.1806 33.4003Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M26.05 21.8656C27.9858 18.389 30.7993 15.4806 34.2098 13.4305L45.9363 32.9386L26.05 21.8656Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M34.2598 13.4011C37.6755 11.3597 41.5667 10.2494 45.5454 10.181L45.9368 32.9389L34.2598 13.4011Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
-            <path d="M126.047 18.2151L136.047 8.21533M136.047 8.21533L131.047 8.21533M136.047 8.21533L136.047 13.2153" stroke="#DBDBDB" strokeWidth="2" stroke-linecap="round"/>
+            <path d="M126.047 18.2151L136.047 8.21533M136.047 8.21533L131.047 8.21533M136.047 8.21533L136.047 13.2153" stroke="#DBDBDB" strokeWidth="2" strokeLinecap="round"/>
             <circle cx="114.952" cy="32.952" r="22.7613" transform="rotate(-1.63361 114.952 32.952)" fill="#D9D9D9"/>
             <path d="M114.298 10.1856C118.275 10.0737 122.213 11.0065 125.718 12.8911L114.938 32.9379L114.298 10.1856Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
             <path d="M125.768 12.9185C129.267 14.812 132.21 17.5899 134.301 20.9752L114.937 32.9379L125.768 12.9185Z" fill="#EB6424" stroke="white" strokeWidth="0.5"/>
