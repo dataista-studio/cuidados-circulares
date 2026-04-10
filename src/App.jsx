@@ -6,6 +6,7 @@ import SeccionII from './screens/SeccionII.jsx'
 import SeccionIII from './screens/SeccionIII.jsx'
 import SeccionIV from './screens/SeccionIV.jsx'
 import SeccionV from './screens/SeccionV.jsx'
+import SeccionVI from './screens/SeccionVI.jsx'
 import Cierre from './screens/Cierre.jsx'
 import Credits from './screens/Credits.jsx';
 
@@ -36,6 +37,10 @@ function App() {
 
       <section id="personas-receptoras-del-cuidado">
         <SeccionV />
+      </section>
+
+      <section id="personas-receptoras-del-cuidado">
+        <SeccionVI />
       </section>
 
       <section id="cierre">
