@@ -1,5 +1,5 @@
 
-import { useScrollProgress } from "./seccionI/Utils"
+import { useScrollProgress } from "./seccionII/Utils"
 import { useEffect, useRef, useState } from "react";
 
 export default function SeccionIV() {

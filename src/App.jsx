@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <section id="center">
+      <section id="portada">
         <Portada />
       </section>
 

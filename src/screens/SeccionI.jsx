@@ -1,16 +1,11 @@
 
-import SubScreen1 from "./seccionI/SubScreen1";
-
 export default function SeccionI() {
     
 
     return (
 
-        <>
-            <div className="w-screen">
-                <SubScreen1/>
-            </div>
-
-        </>
+        <div className="w-screen h-screen bg-red-500">
+            Cierre
+        </div>
     );
 }
