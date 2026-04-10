@@ -26,11 +26,11 @@ export const getChartTitle = ( country ) => {
 
 export const getChartSource = ( country ) => {
     return country === 'México'
-        ? "Fuente: Enasic 2022"
+        ? "Fuente: Enasic, 2022"
         : (
             country === 'Chile'
                 ? "Fuente: Enut, 2023"
-                : "Fuente: Enhogar 2021" 
+                : "Fuente: Enhogar, 2021" 
         )
 }
 
