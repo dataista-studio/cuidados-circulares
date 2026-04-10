@@ -12,7 +12,7 @@ export default function Cierre() {
 
             </div>
             
-            <div className="flex flex-col text-blanco max-w-[714px] gap-15 text-serif">
+            <div className="flex flex-col text-blanco max-w-[714px] gap-15 font-serif">
                 <p className="text-[22px]">
                     Que esta realidad siga siendo invisible no es un accidente: es el resultado de no medir, 
                     no desagregar, no nombrar. Como muestra esta misma infografía, los datos disponibles son 
