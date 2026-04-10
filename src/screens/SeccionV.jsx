@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { oceano5, tierra5, pais5, verde, naranjo } from "../utils/colors";
+import { oceano5, tierra5, pais5, verde, naranjo, verdeOscuro } from "../utils/colors";
 
 import Title from "./seccionV/Title";
 import Paragraph from "./seccionV/Paragraph";
@@ -47,7 +47,7 @@ export default function SeccionV() {
     return (
         <div className="w-screen h-screen bg-crema overflow-hidden">
             <div className="max-w-[1080px] flex flex-row mx-auto h-screen pt-[43px] gap-10 relative">
-                <div className="w-[48%] h-full">
+                <div className="w-[50%] h-full">
                     <Title title={title} />
                     <Paragraph paragraph={paragraphText} />
                     <CountryTitle countryName={selectedCountry} />
@@ -59,22 +59,22 @@ export default function SeccionV() {
                         countryColor={pais5}
                     />
                 </div>
-                <div className="w-[48%] h-screen">
+                <div className="w-[50%] h-screen">
                     <div className="h-[90%] w-[140%] bg-blanco pt-[49px] relative">
                         <div className="w-[247px] ml-[49px]">
                             <ChartTitle chartTitle={chartTitle} />
                             <ChartSource chartSource={chartSource} />
-                            {selectedCountry === 'México' && <LegendItem fill={"none"} stroke={"#000"} text={"100 personas"} />}
-                            <LegendItem fill={verde} stroke={verde} text={"Mujeres"} />
-                            <LegendItem fill={naranjo} stroke={naranjo} text={"Hombres"} />
+                            {selectedCountry === 'México' && <LegendItem fill={"none"} stroke={"#000"} text={"100.000 personas"} size={12}/>}
+                            <LegendItem fill={verde} stroke={verde} text={"Mujeres"} size={12} />
+                            <LegendItem fill={naranjo} stroke={naranjo} text={"Hombres"} size={12} />
                         </div>
                         <ChartVariable chartVariable={chartVariable} />
                         <Chart country={selectedCountry} />
                     </div>
                 </div>
                 <div className="absolute bottom-[60px] left-[50%] -translate-x-1/2 flex flex-row gap-4">
-                    <ButtonArrow direction="left" onclick={decreaseIndex}/>
-                    <ButtonArrow direction="right" onclick={increaseIndex}/>
+                    <ButtonArrow fill={verdeOscuro} direction="left" onclick={decreaseIndex}/>
+                    <ButtonArrow fill={verdeOscuro} direction="right" onclick={increaseIndex}/>
                 </div>
             </div>
         </div>
