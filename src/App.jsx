@@ -7,6 +7,7 @@ import SeccionIII from './screens/SeccionIII.jsx'
 import SeccionIV from './screens/SeccionIV.jsx'
 import SeccionV from './screens/SeccionV.jsx'
 import Cierre from './screens/Cierre.jsx'
+import Credits from './screens/Credits.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,7 +40,11 @@ function App() {
 
       <section id="cierre">
         <Cierre />
-      </section>      
+      </section>  
+
+      <section id="creditos">
+        <Credits />  
+      </section>    
     </>
   )
 }
