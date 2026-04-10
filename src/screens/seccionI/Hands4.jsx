@@ -2,7 +2,7 @@ import React from 'react'
 
 import { getTransform, useScrollProgress, getOpacity } from "./Utils";
 
-export default function Hands2({progress}) {
+export default function Hands4({progress}) {
   return (
     <>
         <div> 
@@ -26,30 +26,30 @@ export default function Hands2({progress}) {
                 />
 
             <img
-                    src="./src/assets/img/medium_hand_l_transparent_light.png"
+                    src="./src/assets/img/medium_hand_l_transparent.png"
                     alt=""
-                    className="w-[221.41px] h-[490.74px] absolute bottom-0 left-[20%]"
+                    className="w-[221.41px] h-[490.74px] z-10 absolute bottom-0 left-[20%]"
                     style={{
                         transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(50%)`
                     }}
                 />
 
             <img
-                    src="./src/assets/img/medium_hand_r_transparent_light.png"
+                    src="./src/assets/img/medium_hand_r_transparent.png"
                     alt=""
-                    className="w-[221.41px] h-[490.74px] absolute bottom-0 right-[20%] "
+                    className="w-[221.41px] h-[490.74px] z-10 absolute bottom-0 right-[20%]"
                     style={{
                         transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(-50%)`
                     }}
                 />
 
-            <img src="./src/assets/img/small_hand_l_transparent.png" alt="" className="w-[82px] h-[277px] absolute bottom-0 left-[35%]" 
+            <img src="./src/assets/img/small_hand_l_transparent_light.png" alt="" className="w-[82px] h-[277px] z-10 absolute bottom-0 left-[35%]" 
                     style={{
                         transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(50%)`
                     }}
                 />
                 
-            <img src="./src/assets/img/small_hand_r_transparent.png" alt="" className="w-[82px] h-[277px] absolute bottom-0 right-[35%]" 
+            <img src="./src/assets/img/small_hand_r_transparent_light.png" alt="" className="w-[82px] h-[277px] z-10 absolute bottom-0 right-[35%]" 
 
                 style={{
                     transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(-50%)`
@@ -57,16 +57,16 @@ export default function Hands2({progress}) {
 
                 />
 
-            <div className='w-[275px] h-[275px] flex items-center justify-center rounded-full absolute bottom-0 right-[35%] bg-[radial-gradient(146.74%_146.73%_at_50%_50%,_#FA9500_0%,_#D9D9D9_100%)]' style={{
+            <div className='w-[1181px] h-[1181px] flex items-center justify-center rounded-full absolute z-0 bottom-0 right-[-11%] bg-[radial-gradient(146.74%_146.73%_at_50%_50%,_#BBBD8D_0%,_#7C6A0A_100%)]' style={{
                     transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(-50%)`
                 }}>
-                <p className='w-max-[154px text-[50px] text-center text-blanco'>Cuidados Directos</p>
+                <p className='w-max-[154px text-[50px] text-center text-blanco'>Gestión Mental</p>
             </div>
 
-            <div className='w-[359px] h-[321px] flex justify-center items-center bg-[url(./src/assets/img/orange_rectangle.png)] bg-cover bg-no-repeat absolute left-[42.5%] top-[30%]'>
+            <div className='w-[380px] h-[321px] flex justify-center items-center bg-[url(./src/assets/img/dark_green_rectangle.png)] bg-cover bg-no-repeat absolute left-[42.5%] top-[30%]'>
                 
-                <p className='text-center max-w-[307px] text-naranjo-claro text-[22px]'>
-                    Aquellas tareas que implican la interacción de personas, como cambiar de ropa a un bebé, dar de comer a una persona anciana, acompañar a la pareja al centro de salud y hablar por teléfono con un familiar para saber cómo se encuentra.
+                <p className='text-center max-w-[307px] text-verde-oscuro text-[22px]'>
+                    Abarca las tareas de coordinación, planificación y supervisión. Aunque implican un tiempo difuso, pueden suponer una fuerte carga mental y emocional (organizar una alimentación equilibrada, recordar que alguien tiene alergia al huevo, saber que falta leche).
                 </p>
                 
             </div>
