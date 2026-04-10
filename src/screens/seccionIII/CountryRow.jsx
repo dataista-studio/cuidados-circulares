@@ -17,7 +17,7 @@ export default function CountryRow({ country }) {
                     landColor={tierra3}
                     countryColor={pais3}
                 />
-                <div className="absolute top-[70px] left-[50%] -translate-x-1/2 text-center">
+                <div className="absolute top-[80px] left-[50%] -translate-x-1/2 text-center font-heading font-[300] text-[24px] leading-[24px]">
                     {country}
                 </div>
             </div>

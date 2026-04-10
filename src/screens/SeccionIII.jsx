@@ -46,14 +46,14 @@ export default function SeccionIII() {
                 </div>
                 
             </div>
-            <div className="text-black flex flex-row gap-10">
-                <div className="h-[calc(100vh-350px)] w-[70%] bg-blanco pt-[49px] relative flex flex-row">
-                    <div className="w-[30%] h-full">
+            <div className="max-w-[1080px] mx-auto text-black flex flex-row gap-10">
+                <div className="h-[calc(100vh-350px)] w-[80%] bg-blanco relative flex flex-row gap-4 ml-[-40px] px-[40px] py-[20px]">
+                    <div className="w-[40%] h-full">
                         <ChartTitle chartTitle={chartTitle} />
                         <ChartLegend />
                         <ChartSource chartSource={chartSource} />
                     </div>
-                    <div className="w-[70%] bg-[#FDF7EF] h-full">
+                    <div className="w-[60%] bg-[#FDF7EF] h-full px-[20px]">
                         {countries.map(country => {
                             return (
                                 <CountryRow country={country} />
@@ -61,7 +61,7 @@ export default function SeccionIII() {
                         })}
                     </div>
                 </div>
-                <div className="w-[30%] self-center">
+                <div className="w-[20%] self-center">
                     <ChartText charText={chartText} />
                 </div>
             </div>

@@ -1,14 +1,13 @@
-import LegendItem from "../seccionV/LegendItem";
-import { verde, naranjo } from "../../utils/colors";
 import LegendClock from "./LegendClock";
-
+import LegendMale from "./LegendMale";
+import LegendFemale from "./LegendFemale";
 
 export default function ChartLegend() {
     return (
-        <div className="mt-[20px] mb-[50px]">
+        <div className="mt-[20px] mb-[50px] flex flex-col gap-2">
             <LegendClock />
-            <LegendItem fill={verde} stroke={verde} text={"Mujeres"} size={24} />
-            <LegendItem fill={naranjo} stroke={naranjo} text={"Hombres"} size={24} />
+            <LegendFemale />
+            <LegendMale />
         </div>
     )
 }
