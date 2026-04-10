@@ -1,6 +1,8 @@
+import LegendLabel from "./LegendLabel"
+
 export default function LegendClock() {
     return (
-        <div className="ml-[-16px]">
+        <div>
             <svg className="inline" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24.6123" cy="24.611" r="16.9999" transform="rotate(-1.63361 24.6123 24.611)" fill="#D9D9D9"/>
                 <path d="M24.124 7.60732C27.0949 7.52371 30.0357 8.22042 32.6533 9.62797L24.6022 24.6004L24.124 7.60732Z" fill="#E8E5E1" stroke="white" strokeWidth="0.5"/>
@@ -16,9 +18,7 @@ export default function LegendClock() {
                 <path d="M9.74909 16.3307C11.1949 13.7341 13.2963 11.5619 15.8435 10.0307L24.6017 24.6009L9.74909 16.3307Z" fill="#E8E5E1" stroke="white" strokeWidth="0.5"/>
                 <path d="M15.8794 10.0088C18.4306 8.48407 21.3368 7.65481 24.3084 7.60371L24.6007 24.601L15.8794 10.0088Z" fill="#E8E5E1" stroke="white" strokeWidth="0.5"/>
             </svg>
-            <span className="text-[20px] text-negro font-serif leading-[20px] font-normal">
-                {"12 horas"}
-            </span>
+            <LegendLabel label={"12 horas"} />
         </div>
     )
 };
