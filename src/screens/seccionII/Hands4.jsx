@@ -57,18 +57,42 @@ export default function Hands4({progress}) {
 
                 />
 
-            <div className='w-[1181px] h-[1181px] flex items-center justify-center rounded-full absolute z-0 bottom-0 right-[-11%] bg-[radial-gradient(146.74%_146.73%_at_50%_50%,_#BBBD8D_0%,_#7C6A0A_100%)]' style={{
-                    transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(-50%)`
-                }}>
-                <p className='w-max-[154px text-[50px] text-center text-blanco'>Gestión Mental</p>
+            <div className="absolute bottom-[-340px] left-1/2 -translate-x-1/2 z-0">
+                
+                <div
+                    className='w-[1181px] h-[1181px] flex justify-center rounded-full 
+                    bg-[radial-gradient(146.74%_146.73%_at_50%_50%,_#BBBD8D_0%,_#7C6A0A_100%)]'
+                    style={{
+                        transform: getTransform({ progress, direction: "bottom", distance: 120 })
+                    }}
+                >
+                    <p className='text-[50px] text-center text-blanco font-heading leading-[1] mt-20'>
+                        Gestión<br></br>Mental
+                    </p>
+                </div>
+
             </div>
 
-            <div className='w-[380px] h-[321px] flex justify-center items-center bg-[url(./src/assets/img/dark_green_rectangle.png)] bg-cover bg-no-repeat absolute left-[42.5%] top-[30%]'>
-                
-                <p className='text-center max-w-[307px] text-verde-oscuro text-[22px]'>
-                    Abarca las tareas de coordinación, planificación y supervisión. Aunque implican un tiempo difuso, pueden suponer una fuerte carga mental y emocional (organizar una alimentación equilibrada, recordar que alguien tiene alergia al huevo, saber que falta leche).
-                </p>
-                
+
+            <div className="absolute left-1/2 bottom-[20%] -translate-x-1/2">
+
+                <div
+                    className='relative w-[380px] h-[321px] flex justify-center items-center'
+                    style={{
+                        transform: getTransform({ progress, direction: "bottom", distance: 80 })
+                    }}
+                >
+                    <img 
+                        src="./src/assets/img/dark_green_rectangle.png"
+                        alt=""
+                        className="absolute inset-0 w-full h-full object-contain"
+                    />
+
+                    <p className='relative text-center max-w-[307px] text-verde-oscuro text-[22px]'>
+                        Abarca las tareas de coordinación, planificación y supervisión. Aunque implican un tiempo difuso, pueden suponer una fuerte carga mental y emocional (organizar una alimentación equilibrada, recordar que alguien tiene alergia al huevo, saber que falta leche).
+                    </p>
+                </div>
+
             </div>
 
         </div>

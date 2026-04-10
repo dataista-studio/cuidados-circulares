@@ -3,6 +3,7 @@ import React from 'react'
 import { getTransform, useScrollProgress, getOpacity } from "./Utils";
 
 export default function Hands3({progress}) {
+    
   return (
     <>
         <div> 
@@ -57,18 +58,41 @@ export default function Hands3({progress}) {
 
                 />
 
-            <div className='w-[740px] h-[740px] flex items-center justify-center rounded-full absolute z-0 bottom-0 right-[11%] bg-[radial-gradient(146.74%_146.73%_at_50%_50%,_#BBBD8D_0%,_#7C6A0A_100%)]' style={{
-                    transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(-50%)`
-                }}>
-                <p className='w-max-[154px text-[50px] text-center text-blanco'>Cuidados Indirectos</p>
+            <div className="absolute bottom-[-340px] left-1/2 -translate-x-1/2 z-0">
+                
+                <div
+                    className='w-[740px] h-[740px] flex justify-center rounded-full 
+                    bg-[radial-gradient(146.74%_146.73%_at_50%_50%,_#BBBD8D_0%,_#7C6A0A_100%)]'
+                    style={{
+                        transform: getTransform({ progress, direction: "bottom", distance: 80 })
+                    }}
+                >
+                    <p className='text-[50px] mt-20 text-center text-blanco font-heading leading-[1]'>
+                        Cuidados<br></br>Indirectos
+                    </p>
+                </div>
+
             </div>
 
-            <div className='w-[380px] h-[321px] flex justify-center items-center bg-[url(./src/assets/img/light_green_rectangle.png)] bg-cover bg-no-repeat absolute left-[42.5%] top-[30%]'>
-                
-                <p className='text-center max-w-[307px] text-verde-claro text-[22px]'>
-                    Aquellas tareas que implican la interacción de personas, como cambiar de ropa a un bebé, dar de comer a una persona anciana, acompañar a la pareja al centro de salud y hablar por teléfono con un familiar para saber cómo se encuentra.
-                </p>
-                
+            <div className="absolute left-1/2 top-[30%] -translate-x-1/2">
+
+                <div
+                    className='relative w-[380px] h-[321px] flex justify-center items-center'
+                    style={{
+                        transform: getTransform({ progress, direction: "bottom", distance: 80 })
+                    }}
+                >
+                    <img 
+                        src="./src/assets/img/dark_green_rectangle.png"
+                        alt=""
+                        className="absolute inset-0 w-full h-full object-contain"
+                    />
+
+                    <p className='relative text-center max-w-[307px] text-verde-oscuro text-[22px]'>
+                        Aquellas tareas que implican la interacción de personas, como cambiar de ropa a un bebé, dar de comer a una persona anciana, acompañar a la pareja al centro de salud y hablar por teléfono con un familiar para saber cómo se encuentra.
+                    </p>
+                </div>
+
             </div>
 
         </div>
