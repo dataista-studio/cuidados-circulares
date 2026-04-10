@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { oceano5, tierra5, pais5, verde, naranjo } from "../utils/colors";
+import { oceano5, tierra5, pais5, verde, naranjo, verdeOscuro } from "../utils/colors";
 
 import Title from "./seccionV/Title";
 import Paragraph from "./seccionV/Paragraph";
@@ -73,8 +73,8 @@ export default function SeccionV() {
                     </div>
                 </div>
                 <div className="absolute bottom-[60px] left-[50%] -translate-x-1/2 flex flex-row gap-4">
-                    <ButtonArrow direction="left" onclick={decreaseIndex}/>
-                    <ButtonArrow direction="right" onclick={increaseIndex}/>
+                    <ButtonArrow fill={verdeOscuro} direction="left" onclick={decreaseIndex}/>
+                    <ButtonArrow fill={verdeOscuro} direction="right" onclick={increaseIndex}/>
                 </div>
             </div>
         </div>
