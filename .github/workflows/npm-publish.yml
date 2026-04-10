@@ -1,29 +1,30 @@
-name: Generate a build and push to another branch
+name: Building App
 
 on:
   push:
     branches:
-      - master # The branch name your are commit the new changes
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build and Push
     steps:
-      - name: git-checkout
-        uses: actions/checkout@v3
+    - name: Building App
+      uses: mmedoo/build-react-on-push@v1.3
+      with:
 
-      - name: Install all dependencies
-        run: npm install
+        # build files directory inside branch.
+        # if it doesn't exist, it will be created.
+        # default: root
+        # TARGET_DIRECTORY: '.'
 
-      - name: Build
-        run: npm run build # The build command of your project
+        # branch name, if doesn't exist, it will be created
+        # if it doesn't exist, it will be created.
+        # default: build
+        # BRANCH_NAME: 'build'
 
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: build # The branch name where you want to push the assets
-          FOLDER: build # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
+        # directory of your React app
+        # default: .
+        # APP_DIRECTORY: '.'
+
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
