@@ -4,6 +4,8 @@ import Title from "./seccionVI/Title";
 import Paragraph from "./seccionVI/Paragraph";
 import ChartText from "./seccionVI/ChartText";
 import Axis from "./seccionVI/Axis";
+import Babies from "./seccionVI/Babies";
+import Oldies from "./seccionVI/Oldies";
 
 export default function SeccionVI() {
     const countries = ["México", "República Dominicana", "Chile"];
@@ -53,7 +55,11 @@ export default function SeccionVI() {
                     </div>
                     
                 </div>
-                <div className="h-[40%] w-[100%]">
+                <div className="h-[20%] w-[100%] flex justify-between">
+                    <Babies />
+                    <Oldies />
+                </div>
+                <div className="h-[20%] w-[100%]">
                     <Axis step={0} />
                 </div>
             </div>

@@ -12,7 +12,7 @@ export default function Axis({ step }) {
     const xScale = scaleLinear().domain([0,85]).range([2.5, 97.5]);
 
     return (
-        <svg width={"100%"} height={height}>
+        <svg width={"100%"} height={height} key="axis">
             <defs>
                 <marker 
                     id='left-arrow'
@@ -47,36 +47,33 @@ export default function Axis({ step }) {
                 markerStart={"url(#left-arrow)"}
                 markerEnd={"url(#right-arrow)"}
             />
-            {tickLines.map(tickLine => {
+            {tickLines.map((tickLine, i) => {
                 const xPos = `${xScale(tickLine)}%`;
                 return (
-                    <>
-                        <line
-                            x1={xPos}
-                            x2={xPos}
-                            y1={yBase}
-                            y2={yBase + 10}
-                            stroke={burdeo} 
-                            strokeWidth={2} 
-                        />
-                    </>
+                    <line
+                        key={`tick-line-${i}`}
+                        x1={xPos}
+                        x2={xPos}
+                        y1={yBase}
+                        y2={yBase + 10}
+                        stroke={burdeo} 
+                        strokeWidth={2} 
+                    />
                 )
             })}
 
-            {ticks.map(tick => {
+            {ticks.map((tick, i) => {
                 const xPos = `${xScale(tick)}%`;
-                console.log(xPos)
                 return (
-                    <>
-                        <text
-                            x={xPos}
-                            y={yBase + 28}
-                            textAnchor="middle"
-                            className="font-serif text-burdeo text-[18px] font-[500]"
-                        >
-                            {tick}
-                        </text>
-                    </>
+                    <text
+                        key={`tick-text-${i}`}
+                        x={xPos}
+                        y={yBase + 28}
+                        textAnchor="middle"
+                        className="font-serif text-burdeo text-[18px] font-[500]"
+                    >
+                        {tick}
+                    </text>
                 )
             })}
         </svg>
