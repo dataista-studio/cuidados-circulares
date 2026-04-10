@@ -4,8 +4,11 @@ import ChartText from "./seccionIII/ChartText";
 import ChartTitle from "./seccionV/ChartTitle";
 import ChartSource from "./seccionV/ChartSource";
 import ChartLegend from "./seccionIII/ChartLegend";
+import CountryRow from "./seccionIII/CountryRow";
 
 export default function SeccionIII() {
+    const countries = ["México", "República Dominicana", "Chile"];
+
     const title = "El tiempo no se reparte igual";
     const paragraphText = "Cuidar implica invertir tiempo en ello. Todas las personas contamos con solo 24 horas durante un día para realizar nuestras tareas. De ellas, las mujeres de Latinoamérica y El Caribe, destinan el doble o triple más de tiempo al cuidado que los hombres.";
     const chartText = "En México las mujeres le dedican 8 horas más a la semana al cuidado que los hombres.";
@@ -44,20 +47,23 @@ export default function SeccionIII() {
                 
             </div>
             <div className="text-black flex flex-row gap-10">
-                <div className="h-[calc(100vh-350px)] w-[70%] bg-blanco pt-[49px] relative flex flex-col">
+                <div className="h-[calc(100vh-350px)] w-[70%] bg-blanco pt-[49px] relative flex flex-row">
                     <div className="w-[30%] h-full">
                         <ChartTitle chartTitle={chartTitle} />
                         <ChartLegend />
                         <ChartSource chartSource={chartSource} />
                     </div>
                     <div className="w-[70%] bg-[#FDF7EF] h-full">
-                        ads
+                        {countries.map(country => {
+                            return (
+                                <CountryRow country={country} />
+                            )
+                        })}
                     </div>
                 </div>
                 <div className="w-[30%] self-center">
                     <ChartText charText={chartText} />
                 </div>
-                
             </div>
         </div>
     )
