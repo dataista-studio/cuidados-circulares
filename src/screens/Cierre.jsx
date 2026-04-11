@@ -2,13 +2,13 @@ export default function Cierre() {
     return (
         <div  className="h-screen w-screen bg-verde-medio flex  flex-col justify-center items-center gap-12">
 
-            <div className="relative w-[400px]">
+            <div className="relative w-[400px] mb-[80px]">
 
                 <p className="text-[70px] text-salmon font-heading leading-[1.1] text-center">Cuidados<br/>Circulares </p>
 
-                <img src="./src/assets/img/arrow_down.png" alt="" className="absolute top-[-40%] right-[-5%] w-full h-auto"/>
+                <img src="./src/assets/img/arrow_down.png" alt="" className="absolute top-[-60px] right-0 w-full h-auto"/>
 
-                <img src="./src/assets/img/arrow_up.png" alt="" className="absolute bottom-[-20%] right-[5%] w-full h-auto"/>
+                <img src="./src/assets/img/arrow_up.png" alt="" className="absolute bottom-[-60px] right-0 w-full h-auto"/>
 
             </div>
             

@@ -4,7 +4,9 @@ export default function Credits() {
 
             <div className="flex items-center text-blanco gap-5">
                 <p className="text-[29px]">Este proyecto fue diseñado y desarrollado por</p>
-                <img src="./src/assets/img/logo_dataista.png" alt="" className="w-[112px] h-[39px]"/>
+                <a href="https://www.dataista.studio" target="_blank">
+                    <img src="./src/assets/img/logo_dataista.png" alt="" className="w-[112px] h-[39px]"/>
+                </a>
             </div>
 
             <div className="flex items-center text-blanco gap-5">
