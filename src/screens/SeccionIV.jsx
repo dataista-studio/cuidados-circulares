@@ -20,19 +20,19 @@ export default function SeccionIV() {
 
     return (
         
-        <div ref={sectionRef} className="h-[200vh] relative">
+        <div ref={sectionRef} className="h-[300vh] relative">
 
             <div className="sticky top-0 h-screen bg-salmon overflow-hidden">
 
-                <div className="flex ml-85 mt-20">
+                <div className="flex max-w-[1080px] mx-auto mt-10">
                     <p className="text-[91px] text-naranjo max-w-[506px] font-heading leading-[1.1]">
                         Tipos de cuidado, distintas cargas.
                     </p>
 
-                    <div className="max-w-[607px] font-serif">
+                    <div className="max-w-[607px] font-serif mt-4">
                         <p className="text-burdeo">El caso de México, según ENASIC (2022), ilustra una tendencia que se repite en la región: <span className="font-bold"> mientras los hombres asumen labores más puntuales y externas, las mujeres concentran las tareas más continuas e íntimas. </span> </p>
 
-                        <p className="text-burdeo mt-10">Si bien en ambos casos la principal forma de cuidado es estar al pendiente o acompañar a la persona, las diferencias aparecen en lo que viene después.</p>
+                        <p className="text-burdeo mt-4">Si bien en ambos casos la principal forma de cuidado es estar al pendiente o acompañar a la persona, las diferencias aparecen en lo que viene después.</p>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@ export default function SeccionIV() {
                     <div className="flex absolute top-[-52%] left-[10%] gap-52 font-serif text-burdeo text-[22px]" >
 
                         <div className="p-5 bg-blanco flex flex-col gap-5 text-center h-[210px] items-center justify-center w-[1100px]">
-                            <p> <span className="text-verde font-bold">Las mujeres</span> asumen con mayor frecuencia las tareas más constantes y exigentes del día a día: alimentar, asistir en la higiene personal, como bañarse, vestirse o ir al baño, y administrar medicamentos o monitorear el estado de salud.</p>
+                            <p><span className="text-verde font-bold">Las mujeres</span> asumen con mayor frecuencia las tareas más constantes y exigentes del día a día: alimentar, asistir en la higiene personal, como bañarse, vestirse o ir al baño, y administrar medicamentos o monitorear el estado de salud.</p>
 
                             <p className="mt-10 font-bold">Son labores que requieren presencia continua, cercanía física y una alta carga emocional.</p>
                         </div>
