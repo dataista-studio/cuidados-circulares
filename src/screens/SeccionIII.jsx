@@ -3,6 +3,7 @@ import { useState } from "react";
 import Title from "./seccionIII/Title";
 import Paragraph from "./seccionIII/Paragraph";
 import ChartText from "./seccionIII/ChartText";
+import HighlightedChartText from "./seccionIII/HighlightedChartText";
 import ChartTitle from "./seccionV/ChartTitle";
 import ChartSource from "./seccionV/ChartSource";
 import ChartLegend from "./seccionIII/ChartLegend";
@@ -22,12 +23,28 @@ export default function SeccionIII() {
     const [index, setIndex] = useState(0);
     const selectedCountry = countries[index];
 
-    const chartText = selectedCountry === 'México'
-        ? "En México las mujeres le dedican 8 horas más a la semana al cuidado que los hombres."
+    const chartText1 = selectedCountry === 'México'
+        ? "En México las mujeres le dedican"
         : (
             selectedCountry === 'Chile'
-            ? "En Chile las mujeres le dedican 14 horas más a la semana al cuidado que los hombres."
-            : "En Rep. Dominicana las mujeres le dedican 14 horas más a la semana al cuidado que los hombres."
+            ? "En Chile las mujeres le dedican"
+            : "En Rep. Dominicana las mujeres le dedican"
+        );
+    
+    const chartText2 = selectedCountry === 'México'
+        ? "8 horas"
+        : (
+            selectedCountry === 'Chile'
+            ? "14 horas"
+            : "14 horas"
+        );
+
+    const chartText3 = selectedCountry === 'México'
+        ? "más a la semana al cuidado que los hombres."
+        : (
+            selectedCountry === 'Chile'
+            ? "más a la semana al cuidado que los hombres."
+            : "más a la semana al cuidado que los hombres."
         );
 
     const increaseIndex = () => {
@@ -58,14 +75,14 @@ export default function SeccionIII() {
                     </div>
                     
                 </div>
-                <div className="max-w-[1080px] mx-auto text-black flex flex-row gap-10">
-                    <div className="h-[calc(100vh-350px)] w-[80%] bg-blanco relative flex flex-row gap-4 ml-[-40px] px-[40px] py-[20px]">
-                        <div className="w-[40%] h-full">
+                <div className="max-w-[1080px] mx-auto text-black flex flex-row gap-4">
+                    <div className="h-[calc(100vh-350px)] w-[75%] bg-blanco relative flex flex-row gap-4 ml-[-40px] px-[40px] py-[20px]">
+                        <div className="w-[35%] h-full">
                             <ChartTitle chartTitle={chartTitle} />
                             <ChartLegend />
                             <ChartSource chartSource={chartSource} />
                         </div>
-                        <div className="w-[60%] bg-[#FDF7EF] h-full px-[20px]">
+                        <div className="w-[65%] bg-[#FDF7EF] h-full px-[20px]">
                             {countries.map((country, i) => {
                                 return (
                                     <CountryRow country={country} key={i}/>
@@ -73,8 +90,10 @@ export default function SeccionIII() {
                             })}
                         </div>
                     </div>
-                    <div className="w-[20%] self-center">
-                        <ChartText charText={chartText} />
+                    <div className="w-[25%] self-center">
+                        <ChartText charText={chartText1} />
+                        <HighlightedChartText charText={chartText2} />
+                        <ChartText charText={chartText3} />
                     </div>
                 </div>
                 <div className="absolute bottom-[30px] left-[50%] -translate-x-1/2 flex flex-row gap-4">
