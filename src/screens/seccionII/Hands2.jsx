@@ -9,7 +9,7 @@ export default function Hands2({progress}) {
             <img
                     src="./src/assets/img/big_hand_l_transparent_light.png"
                     alt=""
-                    className="h-[237.3px] w-[619.71px] absolute left-0 top-1/2 -translate-y-1/2"
+                    className="h-[237.3px] w-[619.71px] z-10 absolute left-0 top-1/2 -translate-y-1/2"
                     style={{
                         transform: `${getTransform({  progress, direction: "left" })} translateY(-50%)`
                         
@@ -19,7 +19,7 @@ export default function Hands2({progress}) {
             <img
                     src="./src/assets/img/big_hand_r_transparent_light.png"
                     alt=""
-                    className="h-[237.3px] w-[619.71px] absolute right-0 top-1/2 -translate-y-1/2"
+                    className="h-[237.3px] w-[619.71px] z-10 absolute right-0 top-1/2 -translate-y-1/2"
                     style={{
                         transform: `${getTransform({  progress, direction: "right" })} translateY(-50%)`
                     }}
@@ -28,7 +28,7 @@ export default function Hands2({progress}) {
             <img
                     src="./src/assets/img/medium_hand_l_transparent_light.png"
                     alt=""
-                    className="w-[221.41px] h-[490.74px] absolute bottom-0 left-[20%]"
+                    className="w-[221.41px] h-[490.74px] z-10 absolute bottom-0 left-[20%]"
                     style={{
                         transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(50%)`
                     }}
@@ -37,19 +37,19 @@ export default function Hands2({progress}) {
             <img
                     src="./src/assets/img/medium_hand_r_transparent_light.png"
                     alt=""
-                    className="w-[221.41px] h-[490.74px] absolute bottom-0 right-[20%] "
+                    className="w-[221.41px] h-[490.74px] z-10 absolute bottom-0 right-[20%] "
                     style={{
                         transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(-50%)`
                     }}
                 />
 
-            <img src="./src/assets/img/small_hand_l_transparent.png" alt="" className="w-[82px] h-[277px] absolute bottom-0 left-[35%]" 
+            <img src="./src/assets/img/small_hand_l_transparent.png" alt="" className="w-[82px] h-[277px] z-10 absolute bottom-0 left-[35%]" 
                     style={{
                         transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(50%)`
                     }}
                 />
                 
-            <img src="./src/assets/img/small_hand_r_transparent.png" alt="" className="w-[82px] h-[277px] absolute bottom-0 right-[35%]" 
+            <img src="./src/assets/img/small_hand_r_transparent.png" alt="" className="w-[82px] h-[277px] z-10 absolute bottom-0 right-[35%]" 
 
                 style={{
                     transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(-50%)`

@@ -9,7 +9,7 @@ export default function Hands4({progress}) {
             <img
                     src="./src/assets/img/big_hand_l_transparent.png"
                     alt=""
-                    className="h-[237.3px] w-[619.71px] absolute left-0 top-1/2 -translate-y-1/2"
+                    className="h-[237.3px] w-[619.71px] z-10 absolute left-0 top-1/2 -translate-y-1/2"
                     style={{
                         transform: `${getTransform({  progress, direction: "left" })} translateY(-50%)`
                         
@@ -19,7 +19,7 @@ export default function Hands4({progress}) {
             <img
                     src="./src/assets/img/big_hand_r_transparent.png"
                     alt=""
-                    className="h-[237.3px] w-[619.71px] absolute right-0 top-1/2 -translate-y-1/2"
+                    className="h-[237.3px] w-[619.71px] z-10 absolute right-0 top-1/2 -translate-y-1/2"
                     style={{
                         transform: `${getTransform({  progress, direction: "right" })} translateY(-50%)`
                     }}
