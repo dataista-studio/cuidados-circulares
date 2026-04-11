@@ -3,8 +3,12 @@ import { scaleLinear } from "d3-scale";
 
 export default function Axis({ step }) {
 
-    const ticks = [0, 15, 65, 85];
-    const tickLines = [15, 65]
+    const ticks = step === 2
+        ? [0, 10, 15, 25, 65, 85]
+        : [0, 15, 65, 85];
+    const tickLines = step === 2
+        ? [10, 15, 25, 65]
+        : [15, 65]
     const height = 150;
     const yBase = 35;
 

@@ -1,7 +1,7 @@
-export default function ChartText({ charText }) {
+export default function ChartText({ chartText }) {
     return (
-        <p className="text-[35px] text-naranjo-claro font-serif leading-[35px] font-normal">
-            {charText}
+        <p className="text-[22px] text-naranjo-oscuro font-serif leading-[22px] font-normal">
+            {chartText}
         </p>
     )
 };
