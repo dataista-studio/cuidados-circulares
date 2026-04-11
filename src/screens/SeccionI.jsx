@@ -5,7 +5,7 @@ export default function SeccionI() {
     return (
 
         
-        <div  className="h-screen w-screen bg-verde-claro flex justify-center items-start relative">
+        <div className="h-screen w-screen bg-verde-claro flex justify-center items-start relative">
             
             <img className="w-[553px] h-[563px] left-0 bottom-0 absolute" alt="" src="./src/assets/img/intro_textures_left.png" />
 
@@ -17,7 +17,7 @@ export default function SeccionI() {
                     ¿Qué son los cuidados?
                 </p>
 
-                <p className="text-[22px] text-burdeo font-serif">
+                <p className="text-[22px] text-burdeo font-serif z-10">
                     Según la organización de naciones unidas “los cuidados son las actividades que regeneran diaria y 
                     generacionalmente el bienestar físico y emocional de las personas. 
                     Incluye las tareas cotidianas de gestión y sostenimiento de la vida, 
@@ -26,7 +26,7 @@ export default function SeccionI() {
                     apoyo psicológico a los miembros de la familia”.
                 </p>
 
-                <p className="text-[22px] text-burdeo mt-2 font-serif relative">
+                <p className="text-[22px] text-burdeo mt-2 font-serif relative z-10">
                     Las políticas de cuidado reconocen que toda persona tiene simultáneamente el derecho a recibir 
                     cuidado y la capacidad de entregarlo a lo largo de su vida. 
                 </p>
