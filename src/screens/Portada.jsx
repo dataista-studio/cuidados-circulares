@@ -1,7 +1,7 @@
 export default function Portada() {
     return (
 
-        <div className="w-screen h-screen bg-verde-medio flex flex-col gap-10 text-center items-center justify-center relative">
+        <div className="w-screen h-screen bg-verde-medio flex flex-col gap-2 text-center items-center justify-center relative">
             
             <img 
                 src="./src/assets/img/waves.png" 
