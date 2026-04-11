@@ -5,11 +5,13 @@ export default function Axis({ step }) {
 
     const ticks = [0, 15, 65, 85];
     const tickLines = [15, 65]
-    const maxAge = 85;
-    const height = 80;
+    const height = 150;
     const yBase = 35;
 
     const xScale = scaleLinear().domain([0,85]).range([2.5, 97.5]);
+
+    const xBabies = `${xScale(0)}%`;
+    const xOldies = `${xScale(65)}%`;
 
     return (
         <svg width={"100%"} height={height} key="axis">
@@ -76,6 +78,62 @@ export default function Axis({ step }) {
                     </text>
                 )
             })}
+
+            <text
+                x={xBabies}
+                y={yBase + 48}
+                textAnchor="begin"
+            >
+                <tspan
+                    x={xBabies}
+                    dy={0}
+                    className="font-serif text-burdeo text-[18px] font-[700] leading-[18px]"
+                >
+                    {"Grupo prioritario"}
+                </tspan>
+                <tspan
+                    x={xBabies}
+                    dy={"1.2rem"}
+                    className="font-serif text-burdeo text-[18px] font-[700] leading-[18px]"
+                >
+                    {"de cuidados"}
+                </tspan>
+                <tspan
+                    x={xBabies}
+                    dy={"1.2rem"}
+                    className="font-serif text-burdeo text-[18px] font-[400] leading-[18px]"
+                >
+                    {"<15 años"}
+                </tspan>
+            </text>
+
+            <text
+                x={xOldies}
+                y={yBase + 48}
+                textAnchor="begin"
+            >
+                <tspan
+                    x={xOldies}
+                    dy={0}
+                    className="font-serif text-burdeo text-[18px] font-[700] leading-[18px]"
+                >
+                    {"Grupo prioritario"}
+                </tspan>
+                <tspan
+                    x={xOldies}
+                    dy={"1.2rem"}
+                    className="font-serif text-burdeo text-[18px] font-[700] leading-[18px]"
+                >
+                    {"de cuidados"}
+                </tspan>
+                <tspan
+                    x={xOldies}
+                    dy={"1.2rem"}
+                    className="font-serif text-burdeo text-[18px] font-[400] leading-[18px]"
+                >
+                    {">65 años"}
+                </tspan>
+            </text>
         </svg>
     )
 };

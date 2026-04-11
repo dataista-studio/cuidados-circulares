@@ -46,7 +46,7 @@ export default function SeccionVI() {
     return (
         <div className="w-screen h-screen bg-crema">
             <div className="flex flex-col relative h-full max-w-[1080px] mx-auto">
-                <div className="w-full flex flex-row mx-auto h-[60%] pt-[43px] gap-10 relative">
+                <div className="w-full flex flex-row mx-auto h-[50%] pt-[43px] gap-10 relative">
                     <div className="w-[66%] h-[100%]">
                         <Title title={title} />
                     </div>
@@ -55,7 +55,7 @@ export default function SeccionVI() {
                     </div>
                     
                 </div>
-                <div className="h-[20%] w-[100%] flex justify-between">
+                <div className="h-[126px] w-[100%] flex justify-between">
                     <Babies />
                     <Oldies />
                 </div>
