@@ -89,7 +89,7 @@ export default function Hands3({progress}) {
                     />
 
                     <p className='relative text-center max-w-[307px] text-verde-oscuro font-serif text-[22px]'>
-                        Aquellas tareas que implican la interacción de personas, como cambiar de ropa a un bebé, dar de comer a una persona anciana, acompañar a la pareja al centro de salud y hablar por teléfono con un familiar para saber cómo se encuentra.
+                        Aquellas tareas que establecen las condiciones materiales para hacer posibles los cuidados directos (lavar la ropa de alguien, hacer la comida).
                     </p>
                 </div>
 
