@@ -60,10 +60,10 @@ export default function Hands2({progress}) {
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
                 
                 <div
-                    className='w-[275px] h-[275px] flex items-center justify-center rounded-full 
-                    bg-[radial-gradient(146.74%_146.73%_at_50%_50%,_#FA9500_0%,_#D9D9D9_100%)]'
+                    className='w-[275px] h-[275px] flex items-center justify-center rounded-full'
                     style={{
-                        transform: getTransform({ progress, direction: "bottom", distance: 120 })
+                        transform: getTransform({ progress, direction: "bottom", distance: 120 }),
+                        background: "radial-gradient(146.74% 146.73% at 50% 50%, #FA9500 0%, #D9D9D9 100%)"
                     }}
                 >
                     <p className='max-w-[154px] text-[50px] text-center text-blanco font-heading leading-[1]'>
