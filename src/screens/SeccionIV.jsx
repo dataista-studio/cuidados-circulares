@@ -29,7 +29,7 @@ export default function SeccionIV() {
                         Tipos de cuidado, distintas cargas.
                     </p>
 
-                    <div className="max-w-[607px] font-serif mt-4">
+                    <div className="max-w-[607px] font-serif mt-4 text-[22px]">
                         <p className="text-burdeo">El caso de México, según ENASIC (2022), ilustra una tendencia que se repite en la región: <span className="font-bold"> mientras los hombres asumen labores más puntuales y externas, las mujeres concentran las tareas más continuas e íntimas. </span> </p>
 
                         <p className="text-burdeo mt-4">Si bien en ambos casos la principal forma de cuidado es estar al pendiente o acompañar a la persona, las diferencias aparecen en lo que viene después.</p>

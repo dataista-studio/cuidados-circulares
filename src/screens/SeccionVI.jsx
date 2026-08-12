@@ -11,7 +11,11 @@ import Oldies0 from "./seccionVI/Oldies0";
 import Oldies1 from "./seccionVI/Oldies1";
 import ButtonArrow from "../ui/ButtonArrow";
 
-import { burdeo } from "../utils/colors";
+import { getEnglishName} from "./seccionV/content";
+
+import { oceano5, tierra5, pais5, verde, naranjo, verdeOscuro, burdeo } from "../utils/colors";
+
+import Globe from "../components/Globe";
 
 export default function SeccionVI() {
     const n = 2;
@@ -65,48 +69,67 @@ export default function SeccionVI() {
     }
 
     return (
-        <div className="w-screen h-screen bg-crema">
-            <div className="flex flex-col relative h-full max-w-[1080px] mx-auto">
-                <div className="w-full flex flex-row mx-auto h-[60%] pt-[43px] gap-10 relative">
-                    <div className="w-[66%] h-[100%]">
-                        <Title title={title} colorTitle={colorTitle} />
-                        <ChartText chartText={chartText} />
-                    </div>
-                    <div className="w-[33%] h-[100%] mt-[30px]">
-                        <Paragraph paragraph={paragraphText1} />
-                        <HighlightedParagraph paragraph={paragraphText2} />
-                        <Paragraph paragraph={paragraphText3} />
-                    </div>
-                    
-                </div>
-                <div className="h-[126px] w-[100%] flex justify-between items-end mb-[-40px] mt-[50px]">
-                    {index === 0 &&
-                        <>
-                            <Babies0 opacity={1}/>
-                            <Oldies0 opacity={1}/>
-                        </>
-                    }
-                    {index === 1 &&
-                        <>
-                            <Babies0 opacity={0.2}/>
-                            <Oldies1 opacity={1}/>
-                        </>
-                    }
-                    {index === 2 &&
-                        <>
-                            <Babies2 opacity={1}/>
-                            <Oldies0 opacity={0.2}/>
-                        </>
-                    }
-                </div>
-                <div className="h-[20%] w-[100%]">
-                    <Axis step={index} />
-                </div>
-                <div className="absolute bottom-[60px] left-[50%] -translate-x-1/2 flex flex-row gap-4">
-                    <ButtonArrow fill={burdeo} direction="left" onclick={decreaseIndex}/>
-                    <ButtonArrow fill={burdeo} direction="right" onclick={increaseIndex}/>
-                </div>
+      <div className="w-screen h-screen bg-crema">
+        <div className="flex flex-col relative h-full max-w-[1080px] mx-auto">
+          <div className="w-full flex flex-row mx-auto h-[60%] pt-[43px] gap-10 relative">
+            <div className="w-[66%] h-[100%]">
+              <Title title={title} colorTitle={colorTitle} />
+              <ChartText chartText={chartText} />
             </div>
+
+            <div className="w-[33%] h-[100%] mt-[30px]">
+              <Paragraph paragraph={paragraphText1} />
+              <HighlightedParagraph paragraph={paragraphText2} />
+              <Paragraph paragraph={paragraphText3} />
+            </div>
+
+            {index !== 0 && (
+                <Globe
+                width={180}
+                countryName={getEnglishName("Chile")}
+                oceanColor={oceano5}
+                landColor={tierra5}
+                countryColor={pais5}
+                />
+            )}
+
+          </div>
+          <div className="h-[126px] w-[100%] flex justify-between items-end mb-[-40px] mt-[50px]">
+            {index === 0 && (
+              <>
+                <Babies0 opacity={1} />
+                <Oldies0 opacity={1} />
+              </>
+            )}
+            {index === 1 && (
+              <>
+                <Babies0 opacity={0.2} />
+                <Oldies1 opacity={1} />
+              </>
+            )}
+            {index === 2 && (
+              <>
+                <Babies2 opacity={1} />
+                <Oldies0 opacity={0.2} />
+              </>
+            )}
+          </div>
+          <div className="h-[20%] w-[100%]">
+            <Axis step={index} />
+          </div>
+          <div className="absolute bottom-[60px] left-[50%] -translate-x-1/2 flex flex-row gap-4">
+            <ButtonArrow
+              fill={burdeo}
+              direction="left"
+              onclick={decreaseIndex}
+            />
+            <ButtonArrow
+              fill={burdeo}
+              direction="right"
+              onclick={increaseIndex}
+            />
+          </div>
         </div>
-    )
+      </div>
+    );
 };
