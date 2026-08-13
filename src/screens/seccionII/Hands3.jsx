@@ -2,13 +2,22 @@ import React from 'react'
 
 import { getTransform, useScrollProgress, getOpacity } from "./Utils";
 
+
+import bigHandL from "../../assets/img/big_hand_l_transparent_light.png";
+import bigHandR from "../../assets/img/big_hand_r_transparent_light.png";
+import mediumHandL from "../../assets/img/medium_hand_l_transparent.png";
+import mediumHandR from "../../assets/img/medium_hand_r_transparent.png";
+import smallHandL from "../../assets/img/small_hand_l_transparent_light.png";
+import smallHandR from "../../assets/img/small_hand_r_transparent_light.png";
+import darkGreenRectangle from "../../assets/img/dark_green_rectangle.png";
+
 export default function Hands3({progress}) {
     
   return (
     <>
         <div> 
             <img
-                    src="./src/assets/img/big_hand_l_transparent_light.png"
+                    src={bigHandL}
                     alt=""
                     className="h-[355.95px] w-auto z-10 absolute left-0 top-[45%]"
                     style={{
@@ -18,7 +27,7 @@ export default function Hands3({progress}) {
                 />
 
             <img
-                    src="./src/assets/img/big_hand_r_transparent_light.png"
+                    src={bigHandR}
                     alt=""
                     className="h-[427.14px] w-auto z-10 absolute right-0 top-1/2"
                     style={{
@@ -27,7 +36,7 @@ export default function Hands3({progress}) {
                 />
 
             <img
-                    src="./src/assets/img/medium_hand_l_transparent.png"
+                    src={mediumHandL}
                     alt=""
                     className="w-auto h-[441.666px] z-10 absolute bottom-0 left-[12%]"
                     style={{
@@ -36,7 +45,7 @@ export default function Hands3({progress}) {
                 />
 
             <img
-                    src="./src/assets/img/medium_hand_r_transparent.png"
+                    src={mediumHandR}
                     alt=""
                     className="w-auto h-[441.666px] z-10 absolute bottom-0 right-[12%]"
                     style={{
@@ -44,13 +53,13 @@ export default function Hands3({progress}) {
                     }}
                 />
 
-            <img src="./src/assets/img/small_hand_l_transparent_light.png" alt="" className="w-auto h-[277px] z-10 absolute bottom-0 left-[37.5%]" 
+            <img src={smallHandL} alt="" className="w-auto h-[277px] z-10 absolute bottom-0 left-[37.5%]" 
                     style={{
                         transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(50%)`
                     }}
                 />
                 
-            <img src="./src/assets/img/small_hand_r_transparent_light.png" alt="" className="w-auto h-[277px] z-10 absolute bottom-0 right-[37.5%]" 
+            <img src={smallHandR} alt="" className="w-auto h-[277px] z-10 absolute bottom-0 right-[37.5%]" 
 
                 style={{
                     transform: `${getTransform({ progress, direction: "bottom", distance: 120 })} translateX(-50%)`
@@ -83,7 +92,7 @@ export default function Hands3({progress}) {
                     }}
                 >
                     <img 
-                        src="./src/assets/img/dark_green_rectangle.png"
+                        src={darkGreenRectangle}
                         alt=""
                         className="absolute inset-0 w-full h-full object-contain"
                     />

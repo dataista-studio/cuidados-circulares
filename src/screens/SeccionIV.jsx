@@ -2,6 +2,8 @@
 import { useScrollProgress } from "./seccionII/Utils"
 import { useEffect, useRef, useState } from "react";
 
+import photoSlider from "../assets/img/photo_slider.png"
+
 export default function SeccionIV() {
 
     const sectionRef = useRef(null);
@@ -59,7 +61,7 @@ export default function SeccionIV() {
                     </div>
 
                     <img
-                        src="./src/assets/img/photo_slider.png"
+                        src={photoSlider}
                         alt=""
                         className="w-full h-[400px] object-cover object-left"
                         

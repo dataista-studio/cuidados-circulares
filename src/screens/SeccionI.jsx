@@ -1,7 +1,9 @@
 
 import lineHand1 from "../assets/img/line-hand-1.svg";
 import lineHand2 from "../assets/img/line-hand-2.svg";
-
+import arrowDown from "../assets/img/arrow_down.png";
+import arrowUp from "../assets/img/arrow_up.png";
+import hands from "../assets/img/hands.png";
 
 export default function SeccionI() {
     
@@ -77,11 +79,11 @@ export default function SeccionI() {
 
                 <p className="text-[50px] text-white font-heading">Cuidar</p>
 
-                <img src="./src/assets/img/arrow_down.png" alt="" className="absolute top-[-5%] right-[25%] w-[388px] h-[111px]"/>
+                <img src={arrowDown} alt="" className="absolute top-[-5%] right-[25%] w-[388px] h-[111px]"/>
 
-                    <img src="./src/assets/img/arrow_up.png" alt="" className="absolute bottom-[-5%] right-[25%] w-[388px] h-[111px]"/>
+                    <img src={arrowUp} alt="" className="absolute bottom-[-5%] right-[25%] w-[388px] h-[111px]"/>
                 <img 
-                    src="./src/assets/img/hands.png" 
+                    src={hands}
                     alt="" 
                     className="h-[271px] w-[267px]" 
                 />
