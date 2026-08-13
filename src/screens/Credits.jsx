@@ -1,3 +1,7 @@
+
+import logoDataista from "../assets/img/logo_dataista.png"
+import logoDataAccion from "../assets/img/logo_dataaccion.png"
+
 export default function Credits() {
     return (
         <div  className="h-screen w-screen bg-verde-oscuro flex  flex-col justify-center items-center gap-12 font-serif">
@@ -5,13 +9,13 @@ export default function Credits() {
             <div className="flex items-center text-blanco gap-5">
                 <p className="text-[29px]">Este proyecto fue diseñado y desarrollado por</p>
                 <a href="https://www.dataista.studio" target="_blank">
-                    <img src="./src/assets/img/logo_dataista.png" alt="" className="w-[112px] h-[39px]"/>
+                    <img src={logoDataista} alt="" className="w-[112px] h-[39px]"/>
                 </a>
             </div>
 
             <div className="flex items-center text-blanco gap-5">
                 <p className="text-[29px]">Para</p>
-                <img src="./src/assets/img/logo_dataaccion.png" alt="" className="w-[208px] h-[53px]"/>
+                <img src={logoDataAccion} alt="" className="w-[208px] h-[53px]"/>
             </div>
 
  

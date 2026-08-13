@@ -1,3 +1,6 @@
+import arrowDown from './../assets/img/arrow_down.png'
+import arrowUp from './../assets/img/arrow_up.png'
+
 export default function Cierre() {
     return (
         <div  className="h-screen w-screen bg-verde-medio flex  flex-col justify-center items-center gap-12">
@@ -6,9 +9,9 @@ export default function Cierre() {
 
                 <p className="text-[70px] text-salmon font-heading leading-[1.1] text-center">Cuidados<br/>Circulares </p>
 
-                <img src="./src/assets/img/arrow_down.png" alt="" className="absolute top-[-60px] right-0 w-full h-auto"/>
+                <img src={arrowDown} alt="" className="absolute top-[-60px] right-0 w-full h-auto"/>
 
-                <img src="./src/assets/img/arrow_up.png" alt="" className="absolute bottom-[-60px] right-0 w-full h-auto"/>
+                <img src={arrowUp} alt="" className="absolute bottom-[-60px] right-0 w-full h-auto"/>
 
             </div>
             

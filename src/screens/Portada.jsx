@@ -1,3 +1,7 @@
+import waves from "../assets/img/waves.png";
+import hands from "../assets/img/hands.png";
+import call from "../assets/img/call to action.png";
+
 export default function Portada() {
     return (
         <div className="w-screen h-screen bg-verde-medio flex items-center justify-center relative overflow-hidden">
@@ -5,7 +9,7 @@ export default function Portada() {
             <div className="flex flex-col items-center text-center">
 
                 <img
-                    src="./src/assets/img/waves.png"
+                    src={waves}
                     alt=""
                     className="h-[237px] w-[827px] object-contain z-50 absolute top-[17%] opacity-0 animate-[fadeUp_1s_ease-out_forwards]"
                 />
@@ -15,7 +19,7 @@ export default function Portada() {
                 </h1>
 
                 <img
-                    src="./src/assets/img/hands.png"
+                    src={hands}
                     alt=""
                     className="h-[227px] w-[223px] z-10 opacity-0 animate-[fadeUp_1s_ease-out_forwards] [animation-delay:0.4s]"
                 />
@@ -30,7 +34,7 @@ export default function Portada() {
                 </p>
 
                 <img
-                    src="./src/assets/img/call to action.png"
+                    src={call}
                     alt=""
                     className="h-[100px] w-auto z-10 opacity-0 animate-[fadeUp_1s_ease-out_forwards] [animation-delay:1s]"
                 />
